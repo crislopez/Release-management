@@ -1,0 +1,97 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario solicitud</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css.css">
+
+
+    </head>
+    <body>
+      <script src="https://unpkg.com/vue/dist/vue.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.js"></script>
+      <form action="index.html" method="post">
+
+        <h1>Solicitud Publicación</h1>
+        <fieldset>
+      <div id="ambiente">
+       <label for="ambiente"><b>Ambiente:</label>
+         <select v-model="selected" >
+
+             <option >Desarrollo</option>
+             <option >Pruebas</option>
+             <option >Control de calidad</option>
+
+         </select>
+
+
+        <label for="seleccionado"><b>Seleccionado: {{ selected }}</label>
+     </div>
+     <br>
+
+     <script src="main.js"></script>
+     <div id="proyecto">
+      <label for="proyecto"><b>Proyecto:</label>
+        <select v-model="selected" >
+
+            <option >Facturación</option>
+            <option >Ventas</option>
+            <option >Auditoría</option>
+
+        </select>
+
+      <br>
+      <label for="proyecto"><b>Seleccionado: {{ selected }}</label>
+    </div>
+    <script src="main.js"></script>
+    <br>
+    <div id="aplicacion">
+     <label for="aplicacion"><b>Aplicación:</label>
+       <select v-model="selected" >
+
+           <option >Movil JPS</option>
+           <option >WEB 2.0</option>
+           <option >RPG Web</option>
+
+       </select>
+
+     <br>
+     <label for="aplicacion"><b>Seleccionado: {{ selected }}</label>
+   </div>
+   <script src="main.js"></script>
+<br>
+<div id="version">
+  <label for="aplicacion"><b>Versión:</label>
+    <input type="text" v-model="mensaje">
+    <br>
+    <label for="aplicacion"><b>Ingresado: {{ mensaje }}</label>
+</div>
+<script src="main.js"></script>
+<br>
+<div id="fecha">
+  <label for="fecha"><b>Fecha:</label>
+    <input type="text" v-model="mensaje">
+    <br>
+    <label for="fecha"><b>Ingresado: {{ mensaje }}</label>
+</div>
+<script src="main.js"></script>
+<br>
+<div id="archivo">
+<label><b>Archivo:</label>
+<input type="file" id="archivo" name="archivo">
+</div>
+<br>
+<br>
+<div id="botones">
+  <center>
+  <button  class="btn btn-success">Aceptar</button>
+  <button  class="btn btn-success">Cancelar</button>
+</center>
+</div>
+<br>
+ </fieldset>
+ </form>
+    </body>
+</html>
